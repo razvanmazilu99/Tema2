@@ -19,6 +19,7 @@ class University
     public:
         University();
         University(string name, string location);
+        University(const University& university);
         ~University();
         void addStudents(Student &student);
         void printUniversity();

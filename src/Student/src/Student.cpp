@@ -21,6 +21,13 @@ Student& Student::operator=(const Student &student)
     return *this;
 }
 
+ Student::Student(const Student& student) 
+ {
+     firstName = student.firstName;
+     lastName = student.lastName;
+     age = student.age;
+ }
+
 Student::~Student() { }
 
 void Student::printStudent() 

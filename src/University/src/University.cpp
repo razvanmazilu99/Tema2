@@ -8,6 +8,13 @@ University::University(string name, string city)
     this -> city = city;
 }
 
+University::University(const University& university) 
+{
+    this -> name = university.name;
+    this -> city = university.city;
+    this -> students = university.students;
+}
+
 void University::addStudents(Student &student)
 {
     students.push_back(student);

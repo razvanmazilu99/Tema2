@@ -28,5 +28,13 @@ int main()
 
     student3.printStudent();
 
+    //use copy constructor to copy a university
+    University u1(university);
+    u1.printUniversity();
+
+    //use copy constructor to create a student
+    Student student4(student);
+    student4.printStudent();
+
     return 0;
 }
