@@ -1,6 +1,6 @@
 #include "University.hpp"
 
-University::University() : name(""), city(""), students({}) {};
+University::University() : name("None"), city("None"), students({}) {};
 
 University::University(string name, string city) 
 {
@@ -22,4 +22,7 @@ void University::printUniversity()
     }
 }
 
-University::~University() { }
+University::~University() 
+{
+    students.clear();
+}
