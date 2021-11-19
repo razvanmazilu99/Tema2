@@ -16,6 +16,7 @@ class Student
     public:
         Student();
         Student(string firstName, string lastName, int age);
+        Student& operator=(const Student &student);
         ~Student();
         void printStudent();
         string getFirstName();

@@ -18,5 +18,15 @@ int main()
 
     university.printUniversity();
 
+    Student student3;
+
+    //calls the copy assignment operator
+    student3 = student1;
+
+    //self-assign
+    student3 = student3;
+
+    student3.printStudent();
+
     return 0;
 }
