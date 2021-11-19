@@ -1,0 +1,2 @@
+add_subdirectory(Student)
+add_subdirectory(University)
