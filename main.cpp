@@ -18,22 +18,27 @@ int main()
 
     university.printUniversity();
 
-    Student student3;
-
-    //calls the copy assignment operator
-    student3 = student1;
-
-    //self-assign
-    student3 = student3;
-
-    student3.printStudent();
-
     //use copy constructor to copy a university
     University u1(university);
     u1.printUniversity();
 
     //use copy constructor to create a student
-    Student student4(student);
+    Student student3(student);
+    student3.printStudent();
+
+    //use copy assignment operator for university
+    University u2;
+    u2 = u1;
+
+    u2.printUniversity();
+
+    //use copy assignment operator for student
+    Student student4;
+    student4 = student1;
+
+    //self-assign
+    student4 = student4;
+
     student4.printStudent();
 
     return 0;
