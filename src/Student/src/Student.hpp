@@ -16,7 +16,11 @@ class Student
     public:
         Student();
         Student(string firstName, string lastName, int age);
+        ~Student();
         void printStudent();
+        string getFirstName();
+        string getLastName();
+        int getAge();
 };
 
 #endif
