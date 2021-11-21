@@ -9,6 +9,13 @@ Toy::Toy(string name, string manufacturer, double price)
     this -> price = price;
 }
 
+ Toy::Toy(const Toy& toy) 
+ {
+     name = toy.name;
+     manufacturer = toy.manufacturer;
+     price = toy.price;
+ }
+
 Toy& Toy::operator=(const Toy& toy)
 {  
     //check for self-assign
@@ -20,13 +27,6 @@ Toy& Toy::operator=(const Toy& toy)
 
     return *this;
 }
-
- Toy::Toy(const Toy& toy) 
- {
-     name = toy.name;
-     manufacturer = toy.manufacturer;
-     price = toy.price;
- }
 
 Toy::~Toy() { }
 
