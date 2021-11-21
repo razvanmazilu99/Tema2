@@ -1,45 +1,45 @@
-#include "src/Student/src/Student.hpp"
-#include "src/University/src/University.hpp"
+#include "src/Toy/src/Toy.hpp"
+#include "src/Child/src/Child.hpp"
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    Student student("Bill", "Gates", 50);
-    Student student1("Elon", "Musk", 35);
-    Student student2("Albert", "Einstein", 26);
+    Toy toy("Barbie doll", "BarbieEnterprise", 100);
+    Toy toy1("Elsa doll", "Disney", 70);
+    Toy toy2("Race car", "Nerf", 85.6);
 
-    University university("Politehnica", "Timisoara");
+    Child child("Johnny", "Bravo", 5);
 
-    university.addStudents(student);
-    university.addStudents(student1);
-    university.addStudents(student2);
+    child.addToy(toy);
+    child.addToy(toy1);
+    child.addToy(toy2);
 
-    university.printUniversity();
+    child.printChild();
 
-    //use copy constructor to copy a university
-    University u1(university);
-    u1.printUniversity();
+    //use copy constructor to copy a child
+    Child child1(child);
+    child1.printChild();
 
-    //use copy constructor to create a student
-    Student student3(student);
-    student3.printStudent();
+    //use copy constructor to create a toy
+    Toy toy3(toy);
+    toy3.printToy();
 
-    //use copy assignment operator for university
-    University u2;
-    u2 = u1;
+    //use copy assignment operator for child
+    Child child2;
+    child2 = child1;
 
-    u2.printUniversity();
+    child2.printChild();
 
-    //use copy assignment operator for student
-    Student student4;
-    student4 = student1;
+    //use copy assignment operator for toy
+    Toy toy4;
+    toy4 = toy1;
 
     //self-assign
-    student4 = student4;
+    toy4 = toy4;
 
-    student4.printStudent();
+    toy4.printToy();
 
     return 0;
 }

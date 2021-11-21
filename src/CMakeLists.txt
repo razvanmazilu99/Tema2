@@ -1,2 +1,2 @@
-add_subdirectory(Student)
-add_subdirectory(University)
+add_subdirectory(Toy)
+add_subdirectory(Child)
