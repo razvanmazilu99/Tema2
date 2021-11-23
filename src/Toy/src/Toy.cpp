@@ -19,7 +19,10 @@ Toy::Toy(string name, string manufacturer, double price)
 Toy& Toy::operator=(const Toy& toy)
 {  
     //check for self-assign
-    if(this == &toy) return *this;
+    if(this == &toy) {
+        cout << "Self-assign case is treated!" << endl;
+        return *this;
+    }
 
     this -> name = toy.name;
     this -> manufacturer = toy.manufacturer;
