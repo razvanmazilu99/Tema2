@@ -2,6 +2,7 @@
 #define CHILD_H
 
 #include "../../Toy/src/Toy.hpp"
+#include "../../Human/src/Human.hpp"
 
 #include <iostream>
 #include <string>
@@ -9,12 +10,9 @@
 
 using namespace std;
 
-class Child
+class Child : public Human
 {
     private:
-        string firstName;
-        string lastName;
-        int age;
         vector<Toy> toys;
 
     public:
