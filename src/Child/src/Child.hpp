@@ -13,11 +13,12 @@ using namespace std;
 class Child : public Human
 {
     private:
+        string gender;
         vector<Toy> toys;
 
     public:
         Child();
-        Child(string firstName, string lastName, int age);
+        Child(string firstName, string lastName, int age, string gender);
         Child(const Child& child);
         Child& operator=(const Child& child);
         ~Child();

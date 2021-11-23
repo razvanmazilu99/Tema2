@@ -10,7 +10,7 @@ int main()
     Toy toy1("Elsa doll", "Disney", 70);
     Toy toy2("Race car", "Nerf", 85.6);
 
-    Child child("Johnny", "Bravo", 5);
+    Child child("Johnny", "Bravo", 5, "boy");
 
     child.addToy(toy);
     child.addToy(toy1);
