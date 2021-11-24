@@ -34,11 +34,12 @@ int main()
 
     //use copy assignment operator for toy
     Toy toy4;
-    toy4 = toy1 = toy2;
+    (toy4 = toy1) = toy2;
 
     //self-assign
     toy4 = toy4;
 
+    toy1.printToy();
     toy4.printToy();
 
     return 0;
